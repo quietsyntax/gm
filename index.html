@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Good Morning, Havya!</title>
+  <meta name="description" content="A beautiful good morning greeting with love">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <!-- Splash intro -->
+  <div class="splash-screen" id="splashScreen">
+    <div class="splash-bg"></div>
+    <div class="splash-overlay"></div>
+    <div class="splash-content">
+      <h1 class="splash-title">Good Morning</h1>
+      <p class="splash-subtitle">Special Havya!</p>
+      <button class="splash-btn" id="enterBtn">
+        <span>Open Your Surprise</span>
+        <span>💖</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main page -->
+  <div class="main-app" id="mainApp">
+
+    <!-- Full-screen background image -->
+    <div class="bg-image" id="bgImage"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Content layer -->
+    <div class="content-layer">
+
+      <!-- Top bar -->
+      <header class="top-bar">
+        <div class="time-display" id="timeDisplay"></div>
+        <div class="date-display" id="dateDisplay"></div>
+      </header>
+
+      <!-- Centered greeting + message -->
+      <div class="center-area">
+        <h1 class="greeting-text">
+          <span class="line1">सुप्रभात</span>
+          <span class="line2">मेरी जान 💕</span>
+        </h1>
+
+        <div class="message-card" id="messageCard">
+          <div class="msg-emoji" id="msgEmoji"></div>
+          <p class="msg-text" id="msgText"></p>
+        </div>
+
+
+      </div>
+
+      <!-- Bottom section -->
+      <div class="bottom-area">
+        <div class="kiss-section">
+          <p class="kiss-label">Tap to send a kiss 💋</p>
+          <button class="kiss-btn" id="kissBtn">💋</button>
+          <div class="kiss-counter"><span id="kissCount">0</span> kisses sent!</div>
+        </div>
+        <footer class="love-footer">
+          <div class="heartbeat">💖</div>
+          <p>Made with infinite love, just for you ❤️</p>
+        </footer>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
