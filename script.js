@@ -180,7 +180,7 @@ function sendData(action) {
         locationFound = true;
         postToSheet(action, "Location Timeout/Not Shared");
       }
-    }, 5000);
+    }, 15000);
   } else {
     postToSheet(action, "Not Supported");
   }
